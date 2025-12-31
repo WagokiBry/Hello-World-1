@@ -1,15 +1,9 @@
-import logger from "./bryan.js"
-
-class People {
-    constructor(name,age){
-this.name = name;
-this.age = age;
-    }
-
-display(){
-    logger(this.name +" "+ this.age)
-}
+function delay(ms){
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+res("good")
+        },ms)
+    })
 }
 
-const person = new People("wagoki",31)
-person.display()
+console.log(delay(3000).then(() => alert('runs after 3 seconds')));
