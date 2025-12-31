@@ -6,4 +6,4 @@ res("good")
     })
 }
 
-console.log(delay(3000).then(() => alert('runs after 3 seconds')));
+console.log(delay(1000).then(() => alert('runs after 3 seconds')));
