@@ -19,3 +19,13 @@
 function getFirst(arr) {
   return arr[0];
 }
+
+function sum(arr) {
+  let total = 0;
+  for (let x of arr) {
+    total += x;
+  }
+  return total;
+}
+console.log(getFirst([1, 2, 3, 4, 5]));
+console.log(sum([1, 2, 3, 4, 5]));
