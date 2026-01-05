@@ -62,3 +62,13 @@ function problem4(arr) {
     }
   }
 }
+
+function problem5(arr) {
+  for (let i = 0; i < arr.length; i++) {         // Outer → n
+    for (let j = 0; j < arr.length; j++) {       // Middle → n
+      for (let k = 0; k < arr.length; k++) {     // Inner → n
+        console.log(i, j, k);
+      }
+    }
+  }
+}
